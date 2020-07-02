@@ -1,0 +1,13 @@
+$color: rgba(117, 190, 218, 0.5);
+$margin: 1px;
+$font: Gill Sans, sans-serif;
+.MessageBox {
+  background-color: $color;
+  border: 20px solid;
+  font-family: $font;
+  text-align: center;
+  border-radius: 12px;
+  border-color: $color - rgba(117, 190, 218, 0.5);
+  margin: $margin;
+  padding: 20px;
+}

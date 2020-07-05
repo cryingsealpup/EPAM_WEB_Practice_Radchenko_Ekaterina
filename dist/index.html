@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta name = viewport content = "width = device-width, initial-scale = 1.0" charset="utf-8">
         <title>Webpack & SASS navbar</title>
         <link href="style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
     </head>
+
     <body>
+
         <nav class="nav">
-            <a href="#" class="nav__item">
+            <a href="#voices" class="nav__item">
               <i class="material-icons">playlist_play</i>
               <span class="nav__text">All voices</span>
             </a>
-            <a href="#" class="nav__item nav__item--active">
+            <a href="#mic" class="nav__item nav__item--active">
               <i class="material-icons">mic</i>
               <span class="nav__text">Microphone</span>
             </a>
-            <a href="#" class="nav__item">
+            <a href="#stream" class="nav__item">
               <i class="material-icons">speaker</i>
               <span class="nav__text">Stream</span>
             </a>
-          </nav>
-    <script src = bundle.js></script>
+        </nav>
+
+        <div id="voices" class="nav-content">Active: all voices</div>
+        <div id="stream" class="nav-content">Active: stream-mode</div>
+        <div id="mic" class="nav-content default">Active: speaker-mode</div>
+        
+        <script src = bundle.js></script>
+
     </body>
 </html>

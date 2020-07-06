@@ -20,8 +20,8 @@ body {
 
 :target {
     display: block;
+    &~ .default {
+    display: none;
+    }
 }
 
-:target ~ .default {
-    display: none;
-}

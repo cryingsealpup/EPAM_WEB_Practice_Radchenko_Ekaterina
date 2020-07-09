@@ -9,7 +9,6 @@
     </head>
 
     <body>
-
         <nav class="nav">
             <a href="#voices" class="nav__item">
               <i class="material-icons">playlist_play</i>
@@ -25,11 +24,19 @@
             </a>
         </nav>
 
-        <div id="voices" class="nav-content">Active: all voices</div>
-        <div id="stream" class="nav-content">Active: stream-mode</div>
-        <div id="mic" class="nav-content default">Active: speaker-mode</div>
-        
-        <script src = bundle.js></script>
+        <div id="voices" class="nav-content"></div>
 
+        <div id="stream" class="nav-content">
+          <p>Active: stream-mode</p>
+          <audio id='audioPlay'></audio>
+        </div>
+
+        <div class="nav-content default" id="microphoneNode">
+          <div id="mic">Active: speaker-mode</div>
+          <div id=record></div>
+          <div id=stopRecord disabled>Stop</div>
+        </div>
+
+        <script src = bundle.js></script>
     </body>
 </html>

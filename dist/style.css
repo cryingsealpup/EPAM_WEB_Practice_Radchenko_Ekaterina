@@ -2,3 +2,7 @@
 
 body{margin:0 0 55px 0;height:100%}.nav-content{text-align:center;font-family:sans-serif;font-size:18px;display:none;right:50%;bottom:50%;transform:translate(50%, 50%);position:absolute}.default{display:block}:target{display:block}:target ~ .default{display:none}
 
+#voices{max-height:80%;overflow-y:scroll}
+
+#record{background-color:red;color:white;padding:20px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;margin:4px 2px;max-width:50%;max-height:15%;border-radius:50%;position:relative}#stopRecord{background-color:green;border-width:medium;border-color:black;color:white;padding:20px;text-align:center;text-decoration:none;display:block;font-size:16px;margin:4px 2px;max-width:100%;max-height:15%;right:60%;bottom:50%;position:static}#mic{right:50%;bottom:60%;position:static}#speaker_container{position:static}
+

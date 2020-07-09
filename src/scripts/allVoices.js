@@ -17,12 +17,11 @@ function MakeVoice(data) {
     let elem;
 
     function getElem() {
-        if (!elem)
-            render();
+        if (!elem) insertElement();
         return elem;
     }
 
-    function render() {
+    function insertElement() {
         let voice = document.createElement('div');
         voice.className = "voice";
         let audio = document.createElement('audio');
@@ -30,7 +29,7 @@ function MakeVoice(data) {
         audio.src = URL.createObjectURL(blob);
         let audioDiv = document.createElement('div');
         let div = document.createElement('div');
-        
+
         audio.controls = "controls";
         audioDiv.className = "audioDiv";
         audioDiv.appendChild(audio);

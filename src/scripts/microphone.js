@@ -12,15 +12,16 @@ function handlerFunction(stream) {
   rec.ondataavailable = e => {
     audioChunks.push(e.data);
     if (rec.state == "inactive") {
-      let blob = new Blob(audioChunks);
-      sendData(blob)
+    //  let blob = new Blob(audioChunks);
+      socket.emit('audioMessage', audioChunks);
+      //sendData(blob)
     }
   }
 }
-function sendData(data) {
+/*function sendData(data) {
   socket.emit('audioMessage', data);
   console.log("audioMessage was send!");
-}
+}*/
 
 record.onclick = () => {
   console.log('started')

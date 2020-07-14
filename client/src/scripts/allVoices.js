@@ -1,6 +1,7 @@
 import "../styles/voiceContent.scss";
 
-fetch('http://voicy-speaker.herokuapp.com/voices')
+//fetch('http://voicy-speaker.herokuapp.com/voices')
+fetch('http://localhost:3000/voices')
     .then(resp => resp.json()
         .then(data => {
             const voices = document.getElementById("voices");

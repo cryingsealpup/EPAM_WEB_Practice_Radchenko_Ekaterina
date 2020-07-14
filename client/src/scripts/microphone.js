@@ -1,7 +1,8 @@
 import "../styles/micContent.scss";
 import io from 'socket.io-client';
 let rec;
-const socket = io("https://voicy-speaker.herokuapp.com");
+//const socket = io("https://voicy-speaker.herokuapp.com");
+const socket = io('http://localhost:3000');
 navigator.mediaDevices.getUserMedia({ audio: true })
   .then(stream => { handlerFunction(stream) })
 

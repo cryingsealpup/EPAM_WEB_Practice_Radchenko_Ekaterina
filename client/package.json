@@ -27,6 +27,6 @@
     "cors": "^2.8.5",
     "extract-text-webpack-plugin": "^3.0.2",
     "socket-io": "^1.0.0",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.4.0"
   }
 }
